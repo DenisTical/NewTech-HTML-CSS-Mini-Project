@@ -1,0 +1,28 @@
+Colors:
+#0d1216;
+#f1d6c633;
+#3f3d574d;
+#bababa;
+#f1d6c6;
+#999999;
+#787878;
+#ff9d2e;
+#ff8d29;
+#e8ccbb;
+#f9f6f0;
+#dedede;
+#eb8314;
+#f42f25;
+#000000f2;
+#ededed;
+#ffffff;
+#000000;
+#454545;
+
+00000033 - shadow
+
+
+Font-family:
+'Shadows Into Light', cursive
+'Roboto', sans-serif
+'Rubik', sans-serif

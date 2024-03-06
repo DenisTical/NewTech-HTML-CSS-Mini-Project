@@ -1,0 +1,322 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+html {
+    font-size: 10px;
+}
+  
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 500;
+    color: #f0f2ff;
+}
+
+/* <===============header==============> */
+
+header {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    top: 2rem;
+    padding: .3rem 7rem;
+}
+
+header img {
+    height: 2rem;
+}
+
+header > .btn {
+    border-radius: 2rem;
+    border: none;
+    width: 12rem;
+    height:4rem;
+    background-color: #13183f;
+    color: white;
+    font-weight: bold;
+}
+
+header > .btn:hover {
+    background-color: #4253d3;
+    cursor: pointer;
+}
+
+/* <==============content===============> */
+
+.container .container-header {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.container .container-header .content {
+    padding-left: 7rem;
+}
+
+.container .container-header .desktop-image img {
+    position: absolute;
+    right: 0;
+    top: -5rem;
+    height: 50rem;
+    z-index: -1;
+}
+
+.container .container-header .content h1 {
+    color: #13183f;
+    font-weight:900;
+    font-size:4rem;
+    margin-bottom: 3rem;
+}
+
+.container .container-header .content p {
+    color: #83869a;
+    font-size: small;
+    margin-bottom: 3rem;
+    line-height: 2rem;
+}
+
+.container .container-header .content .btn-hover {
+    border-radius: 2rem;
+    border: none;
+    width: 12rem;
+    height:4rem;
+    background-image: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+    color: white;
+    font-weight: bold;
+}
+
+.container .container-header .content .btn-hover:hover {
+    background-image: linear-gradient(180deg, #fda890 0%, #f380c9 100%);
+    cursor: pointer;
+}
+
+/* <=================cards===================> */
+
+.cards {
+    height: 80vh;
+    background-image: linear-gradient(180deg, #ffffff 0%, #f0f2ff 100%);
+    margin-top: 5rem;
+}
+
+.cards .card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 5rem 4rem;
+}
+
+.cards .card-container .card-header {
+    background-image: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+    height: 25vh;
+    width: 22rem;
+    margin: 2.5rem 1rem;
+}
+
+.cards .card-container .card-content {
+    width: 30rem;
+    margin: 1rem;
+    position: relative;
+    background-color: white;
+    height: 25vh;
+    width: 22rem;
+}
+
+.cards .card-container .card-content .icons {
+    margin-top: -2rem;
+    margin-left: -.5rem;
+}
+
+.cards .card-container .card-content .icons img {
+    height: 4rem;
+    width: 4rem;
+}
+
+.cards .card-container .card-content,
+.cards .card-container .card-header {
+    border-radius: 1rem;
+    padding-left: 2rem;
+}
+
+.cards .card-container .card-header h2 {
+    color: white;
+    font-size: 2.5rem;
+    margin-top: 4rem;
+}
+
+.cards .card-container .card-content .card-content-text h2 {
+    color: black;
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+.cards .card-container .card-content .card-content-text p {
+    color: #83869a;
+    font-size: 1rem;
+    margin-top: 2rem;
+}
+
+.cards .card-container .card-content .card-content-text .btn-card {
+    border: none;
+    color: #f74780;
+    background-color: white;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.cards .card-container .card-header:hover {
+    transform: scale(1.1);
+    transition: .7s;
+}
+
+.cards .card-container .card-content:hover {
+    transform: scale(1.1);
+    transition: .7s;
+}
+
+/* <=================footer================> */
+
+.footer {
+    background-color: #13183f;
+    height: 7vh;
+}
+
+.footer .footer-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    top: 1.5rem;
+    padding: .1rem 7rem;
+}
+
+.footer .footer-content img {
+    height: 2rem;
+}
+
+.footer .footer-content .btn-footer {
+    border-radius: 2rem;
+    border: none;
+    width: 12rem;
+    height:4rem;
+    background-image: linear-gradient(180deg, #470058 0%, #da1290 100%);
+    color: white;
+    font-weight: bold;
+}
+
+.footer .footer-content .btn-footer:hover {
+    background-image: linear-gradient(180deg, #b11ad6 0%, #f75cbe 100%);
+    cursor: pointer;
+}
+
+/* <==================mediaquery====================> */
+
+
+@media only screen and (max-width: 816px) {
+    .container .container-header .desktop-image {
+        display: none;
+    }
+
+    body {
+        background: url(assets/image-hero-tablet.png) no-repeat;
+        background-size: 35rem;
+        background-position: right 0;
+    }
+
+    header {
+        padding: .2rem 5rem;
+        width: 100%;
+    }
+
+    .container .container-header .content {
+        padding-left: 5rem;
+    }
+
+    .cards {
+        height: 100vh;
+    }
+
+    .cards .card-container .card-header {
+        height: 20vh;
+    }
+
+    .cards .card-container .card-header h2 {
+        font-size: 2rem;
+    }
+
+    .cards .card-container .card-content {
+        height: 20vh;
+        margin-bottom: 2.5rem;
+    }
+
+    .footer .footer-content {
+        padding: .1rem 5rem;
+    }
+}
+
+@media only screen and (max-width: 662px) {
+    .container .container-header .desktop-image {
+        display: none;
+    }
+
+    body {
+        background: url(assets/image-hero-mobile.png) no-repeat;
+        background-size: 25rem;
+        background-position: 17.5rem 40rem;
+    }
+
+    header {
+        padding: .1rem 2rem;
+        width: 100%;
+    }
+
+    .container .container-header .content {
+        margin-top: -20rem;
+        padding-left: 15rem;
+    }
+
+    .cards {
+        height: 160vh;
+    }
+
+    .cards .card-container {
+        display: block;
+        padding-left: 17.5rem;
+    }
+
+    .cards .card-container .card-header {
+        height: 10vh;
+        margin-bottom: 5.5rem;
+    }
+
+    .cards .card-container .card-header h2 {
+        font-size: 1.8rem;
+        padding-top: 1rem;
+    }
+
+    .cards .card-container .card-content {
+        margin-bottom: 5.5rem;
+        height: 22vh;
+    }
+
+    .cards .card-container .card-content .icons img {
+        margin-top: -2rem;
+        margin-left: -.5rem;
+    }
+
+    .footer .footer-content {
+        padding: .1rem 2rem;
+    }
+}
